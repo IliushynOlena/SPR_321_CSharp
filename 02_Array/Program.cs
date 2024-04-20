@@ -15,8 +15,8 @@ namespace _02_Array
             //Hello();
             #region Array
 
-
             /*
+            
             //int[] = Array
             //int arr[20] = {1,2,3,5,6,4,8,9,10}; 
             //1
@@ -31,7 +31,7 @@ namespace _02_Array
             Console.WriteLine(arr[2]);
             Console.WriteLine(arr[3]);
             Console.WriteLine(arr[4]);
-
+          
             //2
             int[]arr2 = new int[15];
             for (int i = 0; i < arr2.Length; i++)
@@ -410,32 +410,61 @@ namespace _02_Array
 
             #endregion
             #region Params
+            var numbers = new int[] { 11, 11, 11, 14, 11 };
 
-            int[] arr = new int[] { 3, 3, 3, 7, 7, 7 };
-            for (int i = 0; i < arr.Length; i++)
+            foreach (var i in numbers.GroupBy(i => i).Where(g => g.Count() == 1).Select(g => g.Key))
+                Console.WriteLine(i);
+
+
+            int[] items = { 2, 3, 5, 3, 7, 5 };
+            int n = items.Length;
+
+            Console.WriteLine("Unique array elements: ");
+
+            for (int i = 0; i < n; i++)
             {
-                arr[i] = int.Parse(Console.ReadLine()!);
+                bool isDuplicate = false;
+                for (int j = 0; j < i; j++)
+                {
+                    if (items[i] == items[j])
+                    {
+                        isDuplicate = true;
+                        break;
+                    }
+                }
+
+                if (!isDuplicate)
+                {
+                    Console.WriteLine(items[i]);
+
+                }
             }
 
-            for (int i = 0; i < arr.Length; i++)
-            {
-                Console.WriteLine(arr[i]);
-            }
-            ShowArray(10, arr);
-            ShowArray(10, 3, 3, 3, 7, 7, 7);
-            //ShowArray("hello", 10, 15, 14, 47, 2, 3, 6, 9, 8);
-            //ShowArray(10, 15, 14, 47, 2, 3, 6, 9, 8);
-            int a = 5;
+            //int[] arr = new int[] { 3, 3, 3, 7, 7, 7 };
+            //for (int i = 0; i < arr.Length; i++)
+            //{
+            //    arr[i] = int.Parse(Console.ReadLine()!);
+            //}
+
+            //for (int i = 0; i < arr.Length; i++)
+            //{
+            //    Console.WriteLine(arr[i]);
+            //}
+            //ShowArray(10, arr);
+            //ShowArray(10, 3, 3, 3, 7, 7, 7);
+            ////ShowArray("hello", 10, 15, 14, 47, 2, 3, 6, 9, 8);
+
+            //int a = 5;
             //ShowArray(5, new int[] { 3, 3, 3, 7, 7, 7 });
-            // pause
-            Console.ReadKey();
-            //var a = 5;
-            Random random = new Random();   
-     
-            double res = (new Random().Next(100) + new Random().NextDouble());
-            res = Math.Round(res, 2);
-            Console.WriteLine(res); 
+            //// pause
+            //Console.ReadKey();
+            ////var a = 5;
+            //Random random = new Random();   
 
+            //double res = (new Random().Next(100) + new Random().NextDouble());
+            //res = Math.Round(res, 2);
+            //Console.WriteLine(res); 
+            ShowArray(10, 15, 14, 47, 2, 3, 6, 9, 8);
             #endregion
         }
 
