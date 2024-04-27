@@ -12,6 +12,7 @@ namespace _05_StringBuilder
 
             str += ", world";
 
+        
             StringBuilder stringBuilder = new StringBuilder();
             Console.WriteLine("Length : " +  stringBuilder.Length); 
             Console.WriteLine("Capacity : " + stringBuilder.Capacity);
@@ -32,11 +33,12 @@ namespace _05_StringBuilder
             Console.WriteLine("Length : " + stringBuilder.Length);
             Console.WriteLine("Capacity : " + stringBuilder.Capacity);
             string message = "Helodslghdsfokhdfokh";
-            foreach (char c in message)
-            {
-
-            }
-            char.IsLower(message[0]);
+            //foreach (char c in message)
+            //{
+            //    if (char.IsUpper(c)) countUpper++;
+            //    if (char.IsLower(c)) countLower++;
+            //}
+            //char.IsLower(message[0]);
 
         }
     }

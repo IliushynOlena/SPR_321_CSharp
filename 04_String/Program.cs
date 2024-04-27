@@ -10,6 +10,10 @@ namespace _04_String
         static void Main(string[] args)
         {
             Console.OutputEncoding = Encoding.UTF8;
+            String name = null;
+            name = "Olena";//5
+            name += "!";
+            //int* arr = nullptr;
             /*
             string firstname = null, lastname = null;
             firstname = "Bob";
