@@ -62,8 +62,10 @@ namespace _06_IntroToOOP
 
         public Point(int x, int yCoord)
         {
-            SetXCoord(x);
-            SetYCoord(yCoord);
+            XCoord = x;
+            YCoord = yCoord;
+            //SetXCoord(x);
+            //SetYCoord(yCoord);
         }
 
     }

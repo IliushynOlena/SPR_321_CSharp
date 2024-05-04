@@ -4,7 +4,7 @@
      private (default for all fields)
      public
      protected
-     internal - acess from another projects
+     internal -don'n acess from another projects
      protected internal     
      */
     public class MyClass : Object
@@ -58,7 +58,7 @@
         //Auto property --> prop + TAB
         public string Name { get; set; }
         public string Type { get; }//readonly field
-       //full property
+       //full property - fullprop + TAB
         private double salary;
         public double Salary
         {
@@ -96,8 +96,21 @@
                     xCoord = 0;
             }
         }
+        public int YCoord//value
+        {
+            get
+            {
+                return yCoord;
+            }
+            set
+            {
+                if (value > 0)
+                    yCoord = value;
+                else
+                    yCoord = 0;
+            }
+        }
 
-       
         public void Print()
         {
             Console.SetCursorPosition(xCoord, yCoord);
@@ -109,7 +122,7 @@
         }
     }
 
-    public class Program
+     class Program
     {
         static void Main(string[] args)
         {
