@@ -101,7 +101,7 @@ namespace _07_Structs_Ref_Out
 
             int a;
 
-            string str = "Hello";
+            ///string str = "Hello";
 
 
             //out 
