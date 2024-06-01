@@ -17,9 +17,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "06_IntroToOOP", "06_ItroToO
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "07_Structs_Ref_Out", "07_Structs_Ref_Out\07_Structs_Ref_Out.csproj", "{AC26C0A4-83CA-4755-88BB-8FD9C9896A6B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08_OverloadOperators", "08_OverloadOperators\08_OverloadOperators.csproj", "{55AC8874-BA66-41D9-A8D6-B3457FE3417D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "08_OverloadOperators", "08_OverloadOperators\08_OverloadOperators.csproj", "{55AC8874-BA66-41D9-A8D6-B3457FE3417D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09_Indexers", "09_Indexers\09_Indexers.csproj", "{23D054AF-363B-4F6D-B6A9-B3B90F37DDF2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "09_Indexers", "09_Indexers\09_Indexers.csproj", "{23D054AF-363B-4F6D-B6A9-B3B90F37DDF2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10_Inheritance", "10_Inheritance\10_Inheritance.csproj", "{1948A7F4-AAAB-4F8B-ACA9-D5C540461105}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +65,10 @@ Global
 		{23D054AF-363B-4F6D-B6A9-B3B90F37DDF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{23D054AF-363B-4F6D-B6A9-B3B90F37DDF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{23D054AF-363B-4F6D-B6A9-B3B90F37DDF2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1948A7F4-AAAB-4F8B-ACA9-D5C540461105}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1948A7F4-AAAB-4F8B-ACA9-D5C540461105}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1948A7F4-AAAB-4F8B-ACA9-D5C540461105}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1948A7F4-AAAB-4F8B-ACA9-D5C540461105}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
