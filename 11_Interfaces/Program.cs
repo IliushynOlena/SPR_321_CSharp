@@ -38,7 +38,7 @@
     }
     interface IManager
     { 
-        List<IWorkable> ListOfWorkers { get; set; }   
+        List<IWorkable> ListOfWorkers { get; set; }   //null
         void Organize();
         void MakeBudget();
         void Control();
