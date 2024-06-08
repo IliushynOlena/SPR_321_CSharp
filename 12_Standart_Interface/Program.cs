@@ -2,10 +2,17 @@
 
 namespace _12_Standart_Interface
 {
-    class StudentCard
+    class StudentCard : ICloneable
     {
         public int Number { get; set; }
         public string Series { get; set; }
+
+        public object Clone()
+        {
+           StudentCard copy = this.MemberwiseClone() as StudentCard;
+            return copy;
+        }
+
         public override string ToString()
         {
             return $"Student Card : {Number} . Series : {Series}";
@@ -25,8 +32,9 @@ namespace _12_Standart_Interface
         public object Clone()
         {
             Student copy = this.MemberwiseClone() as Student;
-            copy.StudentCard = new StudentCard() { Number = this.StudentCard.Number, 
-             Series = this.StudentCard.Series};
+            copy.StudentCard = this.StudentCard.Clone() as StudentCard;
+            //copy.StudentCard = new StudentCard() { Number = this.StudentCard.Number, 
+            // Series = this.StudentCard.Series};
             return copy;
         }
 
