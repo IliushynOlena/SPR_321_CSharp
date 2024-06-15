@@ -24,14 +24,14 @@
     }
     abstract class Employee : Human  
     {
-        public double Salary { get; set; }//0
+        public double Salary { get; set; } //= 1500000;
         public string Position { get; set; }//null
         public override string ToString()
         {
             return base.ToString() + $"\nPosition {Position} . Salary : {Salary} ";
         }
     }
-    interface IWorkable
+    interface IWorkable//Empty
     {
         bool IsWorking { get; }
         string Work();//{}
