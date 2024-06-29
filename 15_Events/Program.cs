@@ -28,19 +28,19 @@
         //private ExamDelegate examDelegate = null;//MulticastingDelegate
         //public event ExamDelegate examDelegate = null;//MulticastingDelegate/
         //or
-        private ExamDelegate examDelegate;       
+        private ExamDelegate examDelegate;
 
         public event ExamDelegate ExamDelegate
         {
             //+=
-            add 
+            add
             {
                 examDelegate += value;
                 Console.WriteLine(value.Method.Name + "was added ...");
             }
             //-=
-            remove 
-            { 
+            remove
+            {
                 examDelegate -= value;
                 Console.WriteLine(value.Method.Name + "was removed ...");
             }
