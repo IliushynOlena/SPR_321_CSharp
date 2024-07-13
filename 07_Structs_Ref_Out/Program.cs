@@ -52,6 +52,18 @@ namespace _07_Structs_Ref_Out
         public int M { get; set; }
         public int S { get; set; }
     }
+    class User
+    {
+        public string Name { get; set; }
+        public User()
+        {
+            
+        }
+        public User(string name)
+        {
+            this.Name = name;   
+        }
+    }
     internal class Program
     {
         //public static void MethodsWithParams(string name, int[]marks)
@@ -90,10 +102,13 @@ namespace _07_Structs_Ref_Out
 
         static void Main(string[] args)
         {
+            User user = new User(); 
+            user.Name ="Test";
+            Console.WriteLine(user.Name);
             
             Point point = new Point();   //invoke default construtor
 
-            Time time = new Time(); //new - create dynamic momory
+            Time time = new Time(); //new - create dynamic memory
 
             Point emptyPoint;
 

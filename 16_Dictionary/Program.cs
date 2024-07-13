@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,9 +11,12 @@ namespace Dictionary
     {
         static void Main(string[] args)
         {
+            List<string> list = new List<string>(); 
+            List<int> list1 = new List<int>(); 
+           
+            ArrayList arrayList = new ArrayList();  
+     
             Console.OutputEncoding = Encoding.UTF8;
-
-
             Dictionary<int, string> countries = new Dictionary<int, string>(6);
             countries.Add(3, "Great Britain");
             countries.Add(2, "USA");

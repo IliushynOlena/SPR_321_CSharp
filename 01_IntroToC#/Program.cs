@@ -6,154 +6,155 @@ namespace _01_IntroToC_
     {
         static void Main(string[] args)
         {
-           // object obj = new object();  
-                    
-           // Console.WriteLine("Hello, World!");
-           // Console.Write("\tHello\n");
-           // Console.Write("\t\tHello\n");
-           // Console.Write("\t\t\tHello\n");
-           // Console.Write("Hello");
-           // Console.WriteLine();
-           // Console.Write("Hello\n");
-           // Console.WriteLine("Enter string ");
-           // string str = Console.ReadLine()!;
-           // Console.WriteLine(str + "!!!");
+            // object obj = new object();  
 
-           // //int a = 5;
-           // //Int32 b = 15;
+            Console.WriteLine("Hello, World!");
+            Console.Write("\tHello\n");
+            Console.Write("\t\tHello\n");
+            Console.Write("\t\t\tHello\n");
+            Console.Write("Hello");
+            Console.WriteLine();
+            Console.Write("Hello\n");
+            Console.WriteLine("Enter string ");
+            string str = Console.ReadLine()!;
+            Console.WriteLine(str + "!!!");
 
-           //int number =  int.Parse(str);
-           // //double.Parse(str);  
-           // Console.WriteLine(number + 10);
-           // Console.WriteLine("You entered : " + number + 5 +  "!!!");
-           // Console.WriteLine("You entered : " + (number + 5) +  "!!!");
-           // Console.WriteLine($"You entered : {number + 5} !!!");
-
-           // //nullable - references type
-           // ////value type -> not nullable
-           // int a = 0;
-           // //Nullable<int> b = null;//address
-           // int? b = null;//address
-
-           // string word = null;
-           // word = "Hello";
-           /*
-
-            Console.OutputEncoding = Encoding.UTF8;
-            
-            DateTime now = DateTime.Now;
-
-            Console.WriteLine(now);
-
-         
-            Console.WriteLine($"ToShortTimeString : {now.ToShortTimeString()}");
-            Console.WriteLine($"ToShortDateString : {now.ToShortDateString()}");
-            Console.WriteLine($"ToLongTimeString : {now.ToLongTimeString()}");
-            Console.WriteLine($"ToLongDateString : {now.ToLongDateString()}");
-            Console.WriteLine($"Custom : {now.ToString("yyyy-MM-dd")}");
-
-            
             int a = 5;
-            float d = a;//5.0000000
-            //explicit
-            int b = (int) 3.14;
-            //Nullable<int> num2 = null;
-            //or
-            int? num2 = null;
-            
-            string str = null;
-            string str2 = str;
+            Int32 b = 15;
 
-            if (str != null)
-                str.ToUpper();
-            //or
-            str?.ToLower();
-            str?.ToUpper();//? - null-conditional operator
-                           ////
-            str2 = (str == null ? "Error" : str);
-            //or
-            if (str == null)
-            {
-                str2 = "Error";
-            }
-            else
-            {
-                str2 = str;
-            }
-            //or
-            str2 = str ?? "Empty";//?? -null - conditional operator
+            Console.WriteLine("Hello worl");
+            //int number =  int.Parse(str);
+            // //double.Parse(str);  
+            // Console.WriteLine(number + 10);
+            // Console.WriteLine("You entered : " + number + 5 +  "!!!");
+            // Console.WriteLine("You entered : " + (number + 5) +  "!!!");
+            // Console.WriteLine($"You entered : {number + 5} !!!");
 
-            Random random = new Random();
-            
-            for (int i = 0; i < 10; i++)
-            {
-                Console.WriteLine(random.Next(-10, 10));
-            }
-            Console.WriteLine(random.Next());//0....maxInt
-            Console.WriteLine(random.Next(100));//0....99
-            Console.WriteLine(random.Next(100, 500));//100....499
-            Console.WriteLine(random.NextDouble());//0....1
-            
-            if (3 > 8)
-            {
-                Console.WriteLine(">");
-            }
-            else
-            {
-                Console.WriteLine("<");
-            }
-            //while (true)
-            //{
+            // //nullable - references type
+            // ////value type -> not nullable
+            // int a = 0;
+            // //Nullable<int> b = null;//address
+            // int? b = null;//address
 
-            //}
-            //do
-            //{
+            // string word = null;
+            // word = "Hello";
+            /*
 
-            //} while (true);
-            // Console.BackgroundColor = ConsoleColor.Green;
-            Console.ForegroundColor = ConsoleColor.Yellow;
-            Console.BackgroundColor = ConsoleColor.Cyan;
+             Console.OutputEncoding = Encoding.UTF8;
 
-            bool myBool = true;
-            bool myBool1 = false;
-            short myShort = 6;
-            //implicit
-            int myInt = myShort;//short - int
+             DateTime now = DateTime.Now;
 
-            float f1 = 4.5F;//8
-            int i1 = 44;//f
-            float f2 = f1 + i1;//48.5
-            double d1 = f2;//48.500000000000000000
-            //int i2 = f2;//48//error
-
-            //explicit
-            int i2 = (int)f2;
-
-            Console.WriteLine("Enter number : ");
-            string numberStr = Console.ReadLine();
-            int number2 = int.Parse(numberStr);
-
-            Console.WriteLine($"Number {numberStr}");
-           
-            number2 = Convert.ToInt32(numberStr);
-            Console.WriteLine($"Number {numberStr}");
+             Console.WriteLine(now);
 
 
-            try
-            {
-                numberStr = Console.ReadLine();
-                float float_number = Convert.ToSingle(numberStr);
-                Console.WriteLine($"Number float {numberStr}");
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine(ex.Message);
-            }
-            Console.WriteLine("Continue...............");
-            Console.WriteLine("Continue...............");
-            Console.WriteLine("Continue...............");
-            Console.WriteLine("Continue...............");
-            */
+             Console.WriteLine($"ToShortTimeString : {now.ToShortTimeString()}");
+             Console.WriteLine($"ToShortDateString : {now.ToShortDateString()}");
+             Console.WriteLine($"ToLongTimeString : {now.ToLongTimeString()}");
+             Console.WriteLine($"ToLongDateString : {now.ToLongDateString()}");
+             Console.WriteLine($"Custom : {now.ToString("yyyy-MM-dd")}");
+
+
+             int a = 5;
+             float d = a;//5.0000000
+             //explicit
+             int b = (int) 3.14;
+             //Nullable<int> num2 = null;
+             //or
+             int? num2 = null;
+
+             string str = null;
+             string str2 = str;
+
+             if (str != null)
+                 str.ToUpper();
+             //or
+             str?.ToLower();
+             str?.ToUpper();//? - null-conditional operator
+                            ////
+             str2 = (str == null ? "Error" : str);
+             //or
+             if (str == null)
+             {
+                 str2 = "Error";
+             }
+             else
+             {
+                 str2 = str;
+             }
+             //or
+             str2 = str ?? "Empty";//?? -null - conditional operator
+
+             Random random = new Random();
+
+             for (int i = 0; i < 10; i++)
+             {
+                 Console.WriteLine(random.Next(-10, 10));
+             }
+             Console.WriteLine(random.Next());//0....maxInt
+             Console.WriteLine(random.Next(100));//0....99
+             Console.WriteLine(random.Next(100, 500));//100....499
+             Console.WriteLine(random.NextDouble());//0....1
+
+             if (3 > 8)
+             {
+                 Console.WriteLine(">");
+             }
+             else
+             {
+                 Console.WriteLine("<");
+             }
+             //while (true)
+             //{
+
+             //}
+             //do
+             //{
+
+             //} while (true);
+             // Console.BackgroundColor = ConsoleColor.Green;
+             Console.ForegroundColor = ConsoleColor.Yellow;
+             Console.BackgroundColor = ConsoleColor.Cyan;
+
+             bool myBool = true;
+             bool myBool1 = false;
+             short myShort = 6;
+             //implicit
+             int myInt = myShort;//short - int
+
+             float f1 = 4.5F;//8
+             int i1 = 44;//f
+             float f2 = f1 + i1;//48.5
+             double d1 = f2;//48.500000000000000000
+             //int i2 = f2;//48//error
+
+             //explicit
+             int i2 = (int)f2;
+
+             Console.WriteLine("Enter number : ");
+             string numberStr = Console.ReadLine();
+             int number2 = int.Parse(numberStr);
+
+             Console.WriteLine($"Number {numberStr}");
+
+             number2 = Convert.ToInt32(numberStr);
+             Console.WriteLine($"Number {numberStr}");
+
+
+             try
+             {
+                 numberStr = Console.ReadLine();
+                 float float_number = Convert.ToSingle(numberStr);
+                 Console.WriteLine($"Number float {numberStr}");
+             }
+             catch (Exception ex)
+             {
+                 Console.WriteLine(ex.Message);
+             }
+             Console.WriteLine("Continue...............");
+             Console.WriteLine("Continue...............");
+             Console.WriteLine("Continue...............");
+             Console.WriteLine("Continue...............");
+             */
             /////////////////////// Invoke Methods
             //Literals();
             //FormatString();
